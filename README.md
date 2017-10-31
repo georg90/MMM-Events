@@ -11,9 +11,12 @@ Show events from heuteinhamburg.de
         module: 'MMM-HiH-Events',
         position: 'bottom_right',
         config: {
-		rotateInterval: 5 * 60 * 1000,     // New Event Appears every 5 minutes
-		animationSpeed: 3000,              // Event fades in and out
-		picture: true,                     // true, false = no image
+		maxLength: "40",             // adjust to your liking 
+		animationSpeed: 3000,          // Event fades in and out
+        	initialLoadDelay: 4250,
+        	retryDelay: 2500,
+		updateInterval: 60 * 60 * 1000, // 60 minutes. No need to change!
+		
         }
     },
 ```
